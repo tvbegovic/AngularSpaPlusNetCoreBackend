@@ -1,0 +1,7 @@
+<input type="file" multiple ngFileSelect [uploadInput]="uploadInput"
+  [options]="uploaderOptions" (uploadOutput)="onUploadOutput($event)">
+
+  <div>
+    <label>Uploaded files</label>
+    <div *ngFor="let f of files">{{f}}</div>
+  </div>
